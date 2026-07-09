@@ -9,7 +9,6 @@ conn=None
 # Function to connect to the database
 def get_db_connection():
     try:
-     
         conn = psycopg2.connect(
             host=os.getenv('HOST'),
             database=os.getenv('DATABASE'),
@@ -26,4 +25,4 @@ def get_db_connection():
     #     if connection is not None:
     #         connection.close()
 
-conn=get_db_connection()
+# conn=get_db_connection()
